@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+
+    position: relative;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100svh;
+    max-width: 100svw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+}
+
+
+.container div{
+    background-color: rgb(162, 206, 206);
+    width: 300px;
+    height: 400px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+}
+
+.container .sub-container .sub-sub-container{
+    background-color: black;
+    width: 80px;
+    height: 100px;
+    border-radius: 25px;
+    
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes move{
+    0%{
+        transform: translate(5px, 0px);
+    }
+    50%{
+        transform: translate(215px, 0px);
+    }
+    100%{
+        transform: translate(5px, 0px);
+    }
+}
+
+h1::after{
+    content: "";
+    color: rgb(162, 206, 206);
+    animation-name: test;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes test{
+    0%{
+        content: "|";
+    }
+    5%{
+        content: "W|";
+    }
+    9%{
+        content: "Wo|";
+    }
+    14%{
+        content: "WoW|";
+    }
+    18%{
+        content: "WoW!|";
+    }
+    23%{
+        content: "WoW!!|";
+    }
+    27%{
+        content: "WoW!!! |";
+    }
+    32%{
+        content: "WoW!!! n|";
+    }
+    36%{
+        content: "WoW!!! no|";
+    }
+    41%{
+        content: "WoW!!! now|";
+    }
+    45%{
+        content: "WoW!!! now |";
+    }
+    49%{
+        content: "WoW!!! now i|";
+    }
+    54%{
+        content: "WoW!!! now i |";
+    }
+    58%{
+        content: "WoW!!! now i c|";
+    }
+    63%{
+        content: "WoW!!! now i ca|";
+    }
+    67%{
+        content: "WoW!!! now i can|";
+    }
+    72%{
+        content: "WoW!!! now i can |";
+    }
+    76%{
+        content: "WoW!!! now i can s|";
+    }
+    81%{
+        content: "WoW!!! now i can se|";
+    }
+    85%{
+        content: "WoW!!! now i can see|";
+    }
+    89%{
+        content: "WoW!!! now i can see |";
+    }
+    93%{
+        content: "WoW!!! now i can see y|";
+    }
+    97%{
+        content: "WoW!!! now i can see yo|";
+    }
+    100%{
+        content: "WoW!!! now i can see you.";
+    }
+}
+
+
+
+
+
+
+
+
+
+
